@@ -1,0 +1,51 @@
+@import '../src//styles/header.scss';
+@import '../src/styles/movieDetails.scss';
+@import '../src/styles/actors.scss';
+@import '../src/styles/popular.scss';
+@import '../src/styles/movieCard.scss';
+@import '../src/styles/video.scss';
+@import '../src/styles/actorInfo.scss';
+@import '../src/styles/home.scss';
+* {
+	padding: 0;
+	margin: 0;
+}
+
+.container {
+	width: 100%;
+	margin: 0 auto;
+}
+
+a {
+	text-decoration: none;
+}
+
+.loading {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	margin-top: 280px;
+	gap: 10px;
+
+	h2 {
+		animation: loading 0.5s linear infinite;
+		// transition: 100ms;
+	}
+}
+
+@keyframes loading {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+select {
+	color: white;
+	background: #000;
+	padding: 0 1px;
+	border-radius: 10px;
+}

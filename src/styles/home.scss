@@ -1,0 +1,164 @@
+#home {
+	.home {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		&--search {
+			width: 1500px;
+			height: 320px;
+			// background: rgb(118, 95, 95);
+			h1 {
+				margin: 0 50px;
+				color: white;
+				font-size: 30px;
+				font-weight: 900;
+				line-height: 40px;
+				margin-top: 60px;
+			}
+			h1 span {
+				font-weight: 700;
+
+				font-size: 30px;
+			}
+			.searchInBtn {
+				display: flex;
+				align-items: center;
+				margin-left: 50px;
+				margin-top: 50px;
+				input {
+					width: 1350px;
+					height: 40px;
+					// padding: 10px 500px;
+					border-radius: 20px;
+					padding-left: 10px;
+				}
+				button {
+					background: rgba(0, 255, 136, 0.628);
+					color: white;
+					padding: 10px 20px;
+					border-radius: 20px;
+					border: none;
+					font-weight: 800;
+					font-size: 15px;
+					z-index: 1;
+					background-image: linear-gradient(
+						to right top,
+						#051937,
+						#004d7a,
+						#008793,
+						#00bf72,
+						#a8eb12
+					);
+				}
+				// justify-content: center;
+			}
+
+			// input {
+			// 	padding: 100px;
+			// }
+		}
+		&--movies {
+			margin-top: 50px;
+			width: 1450px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			overflow-x: scroll;
+			gap: 20px;
+			img {
+				width: 140px;
+				height: 200px;
+				object-fit: cover;
+				border-radius: 10px;
+			}
+			h1 {
+				font-size: 15px;
+				font-weight: 500;
+			}
+		}
+	}
+	.moviesBlock {
+		position: relative;
+		height: 300px;
+		.circle {
+			position: absolute;
+			width: 40px;
+			height: 40px;
+			border-radius: 50%;
+			background: #000;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			bottom: 80px;
+			left: 10px;
+			h1 {
+				color: white;
+				font-size: 10px;
+			}
+		}
+		.active {
+			color: red;
+		}
+		h2 {
+			font-size: 15px;
+			font-weight: 500;
+
+			margin-top: 20px;
+			color: #000;
+		}
+	}
+}
+@media (max-width: 360px) {
+	#home {
+		.home {
+			&--search {
+				h1 {
+					color: red;
+				}
+			}
+		}
+	}
+}
+@media (max-width: 500px) {
+	#home {
+		.home {
+			&--search {
+				width: 300px;
+				height: 230px;
+				// padding: 0px 0px;
+
+				h1 {
+					margin: 0;
+					font-size: 25px;
+					line-height: 22px;
+					margin-top: 30px;
+				}
+				h1 span {
+					font-size: 15px;
+					line-height: 22px;
+					margin-top: 30px;
+				}
+				.searchInBtn {
+					margin-left: 0;
+					margin-top: 20px;
+					input {
+						width: 300px;
+						height: 25px;
+						font-size: 10px;
+						// margin-right: 10px;
+					}
+					button {
+						padding: 5px 10px;
+						font-size: 10px;
+					}
+				}
+			}
+			&--movies {
+				width: 300px;
+				.moviesBlock {
+				}
+			}
+		}
+	}
+}

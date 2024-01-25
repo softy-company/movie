@@ -1,0 +1,54 @@
+#header {
+	position: sticky;
+	/* backdrop-filter: blur(10px); */
+	top: 0;
+	background: #09023a;
+	padding: 20px 50px;
+	.header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		input {
+			padding: 8px 20px;
+			border-radius: 20px;
+		}
+
+		button {
+			border-radius: 20px;
+			padding: 8px 10px;
+			/* background: #000; */
+			background: none;
+			border: none;
+			color: white;
+			font-size: 20px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.header-nav a {
+			font-size: 17px;
+			font-weight: 400;
+			color: white;
+			margin-left: 40px;
+		}
+	}
+	.search {
+		display: flex;
+		gap: 20px;
+	}
+}
+@media (max-width: 500px) {
+	#header {
+		.header {
+			.header-nav {
+				display: none;
+			}
+			.search {
+				input {
+          display: none;
+				}
+			}
+		}
+	}
+}
